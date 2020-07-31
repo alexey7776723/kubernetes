@@ -11,5 +11,4 @@ spec:
   ports:
   - protocol: TCP
     port: 80
-  externalIPs:
-  - your_public_ip
+    nodePort: 30080
