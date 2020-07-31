@@ -25,15 +25,15 @@ spec:
         image: php:7-fpm
         volumeMounts:
         - name: code
-          mountPath: /html
+          mountPath: /code
       initContainers:
       - name: install
         image: busybox
         volumeMounts:
         - name: code
-          mountPath: /html
+          mountPath: /code
         command:
         - wget
         - "-O"
-        - "/html/index.php"
+        - "/code/index.php"
         - https://raw.githubusercontent.com/do-community/php-kubernetes/master/index.php
