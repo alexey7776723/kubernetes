@@ -8,6 +8,7 @@ spec:
   selector:
     app: nginx
     tier: backend
+  type: NodePort
   ports:
   - protocol: TCP
     port: 80
