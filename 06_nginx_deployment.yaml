@@ -33,6 +33,6 @@ spec:
         - containerPort: 80
         volumeMounts:
         - name: code
-          mountPath: /code
+          mountPath: /html
         - name: config
           mountPath: /etc/nginx/conf.d
